@@ -18,6 +18,9 @@ limitations under the License.
     <groupId>de.schipplock.apps</groupId>
     <artifactId>stromzettel</artifactId>
     <version>0.0.1</version>
+    <name>StromZettel</name>
+    <description>Small application to keep track of your power consumption.</description>
+    <url>https://github.com/schipplock/stromzettel</url>
 
     <properties>
         <maven.compiler.release>17</maven.compiler.release>
