@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="256"
+   height="256"
+   viewBox="0 0 67.733334 67.733334"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="true"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="3.453125"
+     inkscape:cx="78.624434"
+     inkscape:cy="143.9276"
+     inkscape:window-width="1920"
+     inkscape:window-height="1129"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ff4600;stroke-width:4.0439;stroke-dasharray:none;stroke-opacity:1"
+       id="rect599-3"
+       width="23.375107"
+       height="23.375107"
+       x="20.461454"
+       y="19.372162" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#00b31b;stroke-width:4.0439;stroke-dasharray:none;stroke-opacity:1"
+       id="rect599-3-8"
+       width="23.375107"
+       height="23.375107"
+       x="6.9104152"
+       y="6.7076406" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#4369df;stroke-width:4.0439;stroke-dasharray:none;stroke-opacity:1"
+       id="rect599-3-8-4"
+       width="23.375107"
+       height="23.375107"
+       x="37.938496"
+       y="37.229137" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.7556px;font-family:'Book Antiqua';-inkscape-font-specification:'Book Antiqua';opacity:1;fill:#ffffff;fill-opacity:1;stroke:#00b31b;stroke-width:0.265;stroke-dasharray:none;stroke-opacity:1"
+       x="12.259427"
+       y="24.97858"
+       id="text8747"><tspan
+         sodipodi:role="line"
+         id="tspan8745"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.7556px;font-family:'Cascadia Mono';-inkscape-font-specification:'Cascadia Mono';fill:#000000;fill-opacity:1;stroke:#134b1c;stroke-width:0.265;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+         x="12.259427"
+         y="24.97858">S</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.7556px;font-family:'Book Antiqua';-inkscape-font-specification:'Book Antiqua';fill:#ffffff;fill-opacity:1;stroke:#00b31b;stroke-width:0.265;stroke-dasharray:none;stroke-opacity:1"
+       x="43.911137"
+       y="55.886574"
+       id="text8747-1"><tspan
+         sodipodi:role="line"
+         id="tspan8745-6"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.7556px;font-family:'Cascadia Mono';-inkscape-font-specification:'Cascadia Mono';fill:#000000;fill-opacity:1;stroke:#134b1c;stroke-width:0.265;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+         x="43.911137"
+         y="55.886574">Z</tspan></text>
+  </g>
+</svg>

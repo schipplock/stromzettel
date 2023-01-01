@@ -1,0 +1,37 @@
+stages:
+  - build
+  - test
+  - deploy
+
+compile-source:
+  stage: build
+  image: local/maven:3.8.6
+  tags:
+    - linux
+  script:
+    - mvn compile -Dmaven.test.skip=true -T 1C
+  artifacts:
+    paths:
+      - target/
+
+run-tests:
+  stage: test
+  needs: ["compile-source"]
+  image: local/maven:3.8.6
+  tags:
+    - linux
+  script:
+    - mvn test
+  dependencies:
+    - compile-source
+
+deploy-jar:
+  stage: deploy
+  needs: ["compile-source", "run-tests"]
+  image: local/maven:3.8.6
+  tags:
+    - linux
+  script:
+    - mvn deploy
+  dependencies:
+    - compile-source
