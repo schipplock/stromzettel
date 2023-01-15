@@ -1,5 +1,5 @@
 /*
- * Copyright 2022 Andreas Schipplock
+ * Copyright 2023 Andreas Schipplock
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -386,15 +386,16 @@ public class StromZettel extends JFrame {
                 .title(localize("newReadingDialog.title"))
                 .confirmButton(localize("newReadingDialog.confirm"))
                 .cancelButton(localize("newReadingDialog.cancel"))
-                .textfield("READING", localize("newReadingDialog.reading.caption"), "", localize("newReadingDialog.reading.tooltip"), 150, value -> {
+                .textfield("READING", localize("newReadingDialog.reading.caption"), "", localize("newReadingDialog.reading.tooltip"), 205, value -> {
                     try {
                         return Integer.parseInt(value) >= 0;
                     } catch (NumberFormatException ex) {
                         return false;
                     }
                 })
+                .datetimepanel("DATETIME", localize("newReadingDialog.datetime.caption"), 205, LocalDateTime.now())
                 .onConfirm(values -> {
-                    var reading = new Reading(Long.parseLong(values.get("READING")), LocalDateTime.now());
+                    var reading = new Reading(Long.parseLong(values.get("READING")), LocalDateTime.parse(values.get("DATETIME")));
                     reading.setElectricityMeter(meter);
                     meter.addReading(reading);
                     var updatedMeter = electricityMeterDAO.merge(meter);
@@ -440,16 +441,19 @@ public class StromZettel extends JFrame {
                 .title(localize("editReadingDialog.title"))
                 .confirmButton(localize("editReadingDialog.confirm"))
                 .cancelButton(localize("editReadingDialog.cancel"))
-                .textfield("READING", localize("editReadingDialog.reading.caption"), reading.getReadingValue().toString(), localize("editReadingDialog.reading.tooltip"), 150, value -> {
+                .textfield("READING", localize("editReadingDialog.reading.caption"), reading.getReadingValue().toString(), localize("editReadingDialog.reading.tooltip"), 205, value -> {
                     try {
                         return Integer.parseInt(value) >= 0;
                     } catch (NumberFormatException ex) {
                         return false;
                     }
                 })
+                .datetimepanel("DATETIME", localize("editReadingDialog.datetime.caption"), 205, reading.getReadingDate())
                 .onConfirm(values -> {
                     Long readingValue = Long.parseLong(values.get("READING"));
+                    LocalDateTime localDateTime = LocalDateTime.parse(values.get("DATETIME"));
                     reading.setReadingValue(readingValue);
+                    reading.setReadingDate(localDateTime);
                     electricityMeterDAO.merge(meter);
                     ((DefaultTreeModel) tree.getModel()).reload(node);
                     for (int i = 0; i < tree.getRowCount(); i++) tree.expandRow(i);

@@ -1,5 +1,5 @@
 <!--
-Copyright 2022 Andreas Schipplock
+Copyright 2023 Andreas Schipplock
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -17,7 +17,7 @@ limitations under the License.
     <modelVersion>4.0.0</modelVersion>
     <groupId>de.schipplock.apps</groupId>
     <artifactId>stromzettel</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
     <name>StromZettel</name>
     <description>Small application to keep track of your power consumption.</description>
     <url>https://github.com/schipplock/stromzettel</url>
@@ -219,7 +219,7 @@ limitations under the License.
         <dependency>
             <groupId>de.schipplock.gui.swing.dialogs</groupId>
             <artifactId>formdialog</artifactId>
-            <version>0.0.3</version>
+            <version>0.0.4</version>
         </dependency>
         <dependency>
             <groupId>de.schipplock.settings</groupId>
